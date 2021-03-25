@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="phpunit.xsd"
+    bootstrap="vendor/autoload.php"
+    colors="true"
+>
+    <testsuites>
+        <testsuite name="functional">
+            <directory>tests/Functional/</directory>
+        </testsuite>
+        <testsuite name="unit">
+            <directory>tests/Unit/</directory>
+        </testsuite>
+    </testsuites>
+    <coverage
+        includeUncoveredFiles="true"
+        processUncoveredFiles="true"
+    >
+        <include>
+            <directory suffix=".php">src/</directory>
+        </include>
+        <report>
+            <clover outputFile="var/coverage/clover.xml"/>
+            <crap4j outputFile="var/coverage/crap4j.xml" threshold="50"/>
+            <php outputFile="var/coverage/coverage.php"/>
+            <text outputFile="var/coverage/coverage.txt" showUncoveredFiles="false" showOnlySummary="true"/>
+            <html outputDirectory="var/coverage/html/" lowUpperBound="50" highLowerBound="90"/>
+            <xml outputDirectory="var/coverage/xml/"/>
+        </report>
+    </coverage>
+</phpunit>

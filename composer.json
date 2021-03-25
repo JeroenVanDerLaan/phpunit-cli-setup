@@ -1,0 +1,50 @@
+{
+    "name": "jeroenvanderlaan/phpunit-cli-setup",
+    "description": "A PHPUnit extension for preparing test suite execution using CLI commands",
+    "type": "library",
+    "keywords": [
+        "phpunit",
+        "test",
+        "cli",
+        "setup",
+        "prepare",
+        "extension",
+        "shell",
+        "command",
+        "fixture",
+        "setup"
+    ],
+    "homepage": "https://github.com/JeroenVanDerLaan/phpunit-cli-setup",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Jeroen van der Laan",
+            "email": "jeroenvanderlaan91@gmail.com",
+            "homepage": "https://github.com/JeroenVanDerLaan",
+            "role": "Owner"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jeroenvanderlaan\\PhpUnitCliSetup\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jeroenvanderlaan\\PhpUnitCliSetup\\": "tests/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.0"
+        }
+    }
+}
