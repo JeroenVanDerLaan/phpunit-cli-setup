@@ -1,6 +1,13 @@
 # PHPUnit CLI Setup
 A PHPUnit extension for preparing test suite execution using CLI commands.
 
+**This package is a work in progess.**
+
+## Install
+`composer require --dev jeroenvanderlaan/phpunit-cli-setup`
+
+_Currently only PHP 8 and PHPUnit 9.5 are supported._
+
 ## Usage
 Add the `CliSetupExtension` to your `phpunit.xml` `<extension>` configuration and have it execute CLI commands before running your test suite(s).
 ```xml
