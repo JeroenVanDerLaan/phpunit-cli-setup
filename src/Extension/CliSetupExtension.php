@@ -27,6 +27,7 @@ class CliSetupExtension implements BeforeFirstTestHook
     {
         if (true === empty($this->testSuites)) {
             $this->executeCommand($this->command);
+            return;
         }
         $givenTestSuites = $this->getLongOptionsByName('testsuites');
         $matchingTestSuites = array_intersect($this->testSuites, $givenTestSuites);
